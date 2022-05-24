@@ -1,0 +1,21 @@
+<h1>Update task details here</h1>
+<hr>
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+  <br>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <br>
+  <br>
+  <%= f.label :completed? %>
+  <%= f.check_box :completed %>
+  <br>
+  <br>
+  <%= f.submit "Update task!" %>
+<% end %>
+<br>
+<hr>
+<%= link_to("Back to all", tasks_path) %>
